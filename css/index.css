@@ -20,6 +20,24 @@ font: inherit;
 vertical-align: baseline;  
 }
 /*GENERAL STYLES*/
+@media only screen and (max-width: 500px){
+   .artists-container, .title-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    
+    }
+    .artists-container .bio, .artists-container img{
+        display: flex;
+        width: 130%;
+        height: 70%;
+        margin: auto;
+        padding: 30px;
+    
+
+    }
+}
 html{
     font-size:62.5%;
 }
@@ -57,7 +75,8 @@ img {
     margin-top: 4%;	
     margin-left: auto;	
     margin-right: auto;	
-    border-radius: 2%;	
+    border-radius: 2%;
+    width:100%;	
 }	
 img:hover {	
     opacity: 80%;	
@@ -123,7 +142,7 @@ button:hover{
 .artists-container{
     display:flex;
     justify-content: space-around;
-    width:80%;
+    width:100%;
     margin:0 auto;
 }
 
